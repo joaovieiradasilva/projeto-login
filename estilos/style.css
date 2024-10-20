@@ -30,13 +30,13 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-
+    
     background-color: white;
     width: 250px;
     height: 500px;
     overflow: hidden;
-    box-shadow: 0px 0px 10px #3A3038;
 
+    box-shadow: 0px 0px 10px #3A3038;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -48,6 +48,13 @@ section#login {
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
+
+    transition-timing-function: ease;
+    transition: width 1s, height 1s;
+    -webkit-transition: width 0.3s, height 0.3s;
+    -moz-transition: width 1s, height 1s;
+    -ms-transition: width 1s, height 1s;
+    -o-transition: width 1s, height 1s;
 }
 
 section#login > div#img {
