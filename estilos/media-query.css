@@ -28,6 +28,10 @@
         float: right;
         width: 70%;
     }
+
+    div#fml > p {
+        font-size: 1em;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -48,5 +52,13 @@
     section#login > div#fml {
         float: left;
         width: 60%;
+    }
+
+    div#fml > h1 {
+        font-size: 2em;
+    }
+
+    div#fml > p {
+        font-size: 1.2em;
     }
 }

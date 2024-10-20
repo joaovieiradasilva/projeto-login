@@ -30,7 +30,7 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    
+
     background-color: white;
     width: 250px;
     height: 500px;
@@ -69,4 +69,15 @@ section#login > div#img {
 section#login > div#fml {
     display: block;
     padding: 10px;
+}
+
+div#fml > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#fml > p {
+    text-indent: 10px;
+    text-align: justify;
+    font-size: 0.8em;
 }
