@@ -33,7 +33,7 @@ section#login {
 
     background-color: white;
     width: 260px;
-    height: 515px;
+    height: 535px;
     overflow: hidden;
 
     box-shadow: 0px 0px 10px #3A3038;
@@ -78,24 +78,49 @@ div#fml > h1 {
 
 div#fml > p {
     text-indent: 10px;
-    text-align: justify;
     font-size: 0.8em;
+    padding-bottom: 10px;
 }
 
 form > div.campo {
     background-color: #D6E0E9;
     height: 40px;
     margin: 5px 0px;
-
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+    border: 1px solid #755854;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 div.campo > label {
     display: none;
+}
+
+div.campo > span {
+    color: #755854;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    font-size: 1em;
+    height: 100%;
+    border: 0px;
+    padding: 4px;
+    width: calc(100% - 45px);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    transform: translateY(-11px);
+    -webkit-transform: translateY(-11px);
+    -moz-transform: translateY(-11px);
+    -ms-transform: translateY(-11px);
+    -o-transform: translateY(-11px);
 }
 
 form > input[type=submit] {
