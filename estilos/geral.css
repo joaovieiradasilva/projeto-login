@@ -33,10 +33,10 @@ main {
 }
 
 section#login {
+    position: relative;
     background-color: var(--fundo);
     width: 300px;
     height: 550px;
-    position: relative;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
