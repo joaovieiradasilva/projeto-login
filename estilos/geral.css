@@ -92,7 +92,7 @@ div#form > p {
     height: 90%;
     border: none;
     border-radius: 5px;
-    transform: translateY(-13px);
+    transform: translateY(-12px);
 }
 
 input[type=submit] {
