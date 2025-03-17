@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+/* Paleta de cores */
+
+:root {
+    --fundo: #F2F2F2;
+    --letra: #151226;
+    --cor1: #733A2D;
+    --cor2: #A65F46;
+    --cor3: #BF8969;
+}
+
+/* Estilos gerais */ 
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: var(--cor1);
+    width: 100vw;
+    min-height: 100vh;
+    color: var(--letra);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+section#login {
+    background-color: var(--fundo);
+    width: 300px;
+    height: 550px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    left: 50%;
+    top: 50%;
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
+    transform: translate(-50%, -50%);
+}
+
+div#img {
+    display: block;
+    background-color: var(--cor1);
+    background-image: url(../imagens/tela.WebP);
+    background-size: cover;
+    background-position: center top;
+    height: 200px;
+}
+
+div#form {
+    display: block;
+    padding: 10px;
+}
+
+div#form > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#form > p {
+    padding-bottom: 20px;
+    font-size: 0.9em;
+}
+
+.campo {
+    background-color: var(--cor1);
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+.campo span {
+    color: var(--fundo);
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+.campo input {
+    background-color: var(--fundo);
+    font-size: 0.8em;
+    width: calc(100% - 46px);
+    height: 90%;
+    border: none;
+    border-radius: 5px;
+    transform: translateY(-12px);
+}
+
+input[type=submit] {
+    display: block;
+    background-color: var(--cor2);
+    color: var(--fundo);
+    border: none;
+    font-size: 0.8em;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: var(--cor3);
+}
+
+.botao {
+    display: block;
+    color: var(--letra);
+    border: 1px solid var(--cor1);
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.8em;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.botao:hover {
+    background-color: var(--cor3);
+    color: var(--fundo);
+}
+
+/* Media Queries */
+
+@media (min-width: 769px) { /* Tablet */
+    body {
+        background-image: linear-gradient(to bottom, var(--cor3), var(--cor1));
+    }
+
+    section#login {
+        width: 90vw;
+        height: 350px;
+    }
+
+    div#img {
+        background-position: right center;
+        width: 30%;
+        height: 100%;
+        float: left;
+    }
+    div#form {
+        width: 70%;
+        float: right;
+    }
+
+    div#form > p {
+        font-size: 1em;
+    }
+
+    div#form > h1 {
+        font-size: 1.7em;
+    }
+} 
+
+@media (min-width: 1025px) { /* Telas maiores */
+    section#login {
+        max-width: 1025px;
+        height: 400px;
+    }
+
+    div#img {
+        background-position: left top;
+        width: 40%;
+        float: right;
+    }
+
+    div#form {
+        width: 60%;
+        float: left;
+    }
+
+    div#form > h1 {
+        font-size: 2em;
+    }
+
+    div#form > p {
+        font-size: 1.2em;
+        padding-bottom: 40px;
+    }
+}
+
