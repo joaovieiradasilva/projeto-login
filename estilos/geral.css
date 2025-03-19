@@ -27,24 +27,21 @@ body, html {
 }
 
 main {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
     height: 100vh;
 }
 
 section#login {
-    position: relative;
     background-color: var(--fundo);
     width: 300px;
     height: 550px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    left: 50%;
-    top: 50%;
-    transition: width 0.3s, height 0.3s;
-    transition-timing-function: ease;
-    transform: translate(-50%, -50%);
+    transition: width 0.4s, height 0.4s;
 }
 
 div#img {
@@ -137,7 +134,7 @@ input[type=submit]:hover {
     }
 
     section#login {
-        width: 90vw;
+        width: 90%;
         height: 350px;
     }
 
